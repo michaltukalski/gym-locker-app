@@ -1,0 +1,14 @@
+<div class="reserve-button-container">
+  <button class="reserve-button" mat-raised-button color="primary" (click)="reserveLocker()">Reserve locker</button>
+</div>
+<mat-card class="info-container">
+    <mat-card-subtitle>The number of lockers is randomly generated in the range from 8 to 16</mat-card-subtitle>
+</mat-card>
+<div class="lockers-container">
+  <ng-container *ngFor="let locker of lockersData$ | async">
+    <app-locker [locker]='locker'></app-locker>
+  </ng-container>
+</div>
+<mat-card class="info-container" *ngIf="queueEmpty$ | async">
+    <mat-card-subtitle>There is no free locker left!</mat-card-subtitle>
+</mat-card>

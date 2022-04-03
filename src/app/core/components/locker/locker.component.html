@@ -1,0 +1,8 @@
+
+<mat-card class="locker-card" [ngClass]="{free : isStatusFree, occupied : isStatusOccupied, selected: isStatusSelected}">
+  <mat-card-title-group>
+    <mat-card-subtitle>Locker</mat-card-subtitle>
+    <mat-card-title>{{locker?.id}}</mat-card-title>
+    <mat-card-subtitle>{{locker?.status}}</mat-card-subtitle>
+  </mat-card-title-group>
+</mat-card>

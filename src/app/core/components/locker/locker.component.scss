@@ -1,0 +1,19 @@
+.locker-card {
+  max-width: 200px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.occupied {
+  background-color: rgb(235, 101, 101);
+}
+
+.free {
+  background-color: rgb(94, 236, 89);
+}
+
+.selected {
+  background-color: rgb(59, 190, 223);
+}
